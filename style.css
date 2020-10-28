@@ -33,21 +33,21 @@ body {
 h1 {
     font-family: 'Alfa Slab One', cursive;
     font-weight: 200;
-    font-size: 30px;
+    font-size: 25px;
     color: #8d93ab;
 }
 
 h2 {
     font-family: 'Alfa Slab One', cursive;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 18px;
     color: #8d93ab;
 }
 
 p {
     font-family: 'Trispace', sans-serif;
     font-weight: 200;
-    font-size: 15px;
+    font-size: 12px;
     color: #8d93ab;
 }
 
@@ -83,7 +83,7 @@ a {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 10px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 5px;
     border-radius: 5px;
 }
 
