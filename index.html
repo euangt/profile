@@ -3,42 +3,157 @@
 
 <head>
     <title>Euan's Profile</title>
+    <link rel="stylesheet" type="text/css" href="./application/css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courgette&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <meta name="description" content="Wales's Finest Export Since Sir Tom Jones">
 </head>
 
 <body>
-    <div class="container text_center">
-        <div class="card_lead">
-            <div>
-                <h1>Euan Gillespie-Taylor</h1>
-                <img src="images/me.png" alt="A handsome man" class="img-circle">
-                <h2>All Things Important</h2>
-                <p>"Wales's Finest Export Since Sir Tom Jones"</p>
-                <p><span>- Sir Tom Jones</span></p>
-                <p>Part-time Dev; Part-time beer aficionado; Full-time badass.</p>
-            </div>
-        </div>
-
-        <div class="card_light">
-            <h2>Find Me</h2>
-            <ul class="inline_list">
-                <li><a href="https://www.facebook.com/tayloreaw/" target="_blank"><i
-                            class="logos fab fa-facebook-square"></i></a></li>
-                <li><a href="https://github.com/euangt/" target="_blank"><i class="logos fab fa-github-square"></i></a>
-                </li>
-                <li><a href="https://twitter.com/nobetter_taylor" target="_blank"><i
-                            class="logos fab fa-twitter-square"></i></a></li>
-            </ul>
-            <a class="btn-green" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Youtube
-                Highlights</a>
+    <div class="navbar">
+        <div class="navbar_menu">
+            <a class="navbar_item" href="#projects">Projects<span class="navbar_item_hovered"></span><span
+                    class="navbar_item_content" data-content="Projects"></span></a>
+            <a class="navbar_item" href="#experience">Experience<span class="navbar_item_hovered"></span><span
+                    class="navbar_item_content" data-content="Articles"></span></a>
+            <a class="navbar_item" href="#about">About<span class="navbar_item_hovered"></span><span
+                    class="navbar_item_content" data-content="About"></span></a>
+            <a class="navbar_item navbar_item_icon" href="javascript:void(0);" onclick="navResponsive()"><i
+                    class="fa fa-bars"></i></a>
         </div>
     </div>
 
+    <div class="landing-page">
+        <div class="name-banner">
+            <h1 id="name"></h1>
+        </div>
+        <div class="description">
+            <h2 id="desc"></h2>
+        </div>
+    </div>
+    <h3 id="projects"></h3>
+    <br>
+    <h2 class="section-title" id="projects">Projects:</h2>
+
+    <div class="project-list">
+        <div class="project-card">
+            <img class="project-image"
+                src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+                alt="">
+            <h3>InnerMile</h3>
+            <p>Community discovery APP</p>
+        </div>
+
+        <div class="project-card">
+            <img class="project-image"
+                src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+                alt="">
+            <h3>Meanwhile Spaces</h3>
+            <p>Space Rental Service</p>
+        </div>
+
+        <div class="project-card">
+            <img class="project-image"
+                src="https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80"
+                alt="">
+            <h3>The Dive Bar</h3>
+            <p>Cocktail creation tool</p>
+        </div>
+
+    </div>
+
+    <h3 id="experience"></h3>
+    <br>
+    <h2 class="section-title" id="experience">Experience:</h2>
+
+    <div class="experience-list">
+        <div class="experience-card">
+            <h2>Le Wagon - Teaching Assistant</h2>
+            <p>Jan 2020 Onwards</p>
+            <p>Teaching assistant at Le Wagon Berlin for modules related
+                to Ruby, Object Oriented Programming and MVC
+                programming.</p>
+        </div>
+
+        <div class="experience-card">
+            <h2>DES - Content Executive</h2>
+            <p>Mar - Aug 2020</p>
+            <p>Developed marketing and promotional framework for distribution
+                alongside implementation of monitoring systems.</p>
+        </div>
+
+        <div class="experience-card">
+            <h2>Curation - Technology Analyst</h2>
+            <p>Nov 2016 - Oct 2019</p>
+            <p>Constructed rpolicy and regulatory reports and </p>
+        </div>
+
+    </div>
+
+
+    <h2 class="section-title" id="about">The Backstory:</h2>
+    <div class="contact-list">
+        <div>
+            <img src="./application/images/me.png" alt="An Honorable Man" class="me">
+        </div>
+        <div class="contact-card">
+            <h2>Who I am</h2>
+            <p>A technology enthusiast, whether researching the newest tech or building cool apps</p>
+            <h2>What I love to work with</h2>
+            <p>Ruby on Rails; PostgreSQL; HTML5; CSS; JavaScript; Git and Github; </p>
+            <h2>Lets work together:</h2>
+            <ul class="inline_list">
+                <li><a href="https://www.linkedin.com/in/euan-gillespie-taylor" target="_blank"><i
+                            class="logos fab fa-linkedin"></i></a>
+                </li>
+                <li><a href="https://github.com/euangt/" target="_blank"><i class="logos fab fa-github-square"></i></a>
+                </li>
+                <li><a href="https://twitter.com/nobetter_taylor" target="_blank"><i
+                            class="logos fab fa-twitter-square"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
+    <script>
+        new TypeIt('#name', {
+            strings: ["Euan", "Gillespie", "Taylor"],
+            waitUntilVisible: true,
+            cursor: false,
+            speed: 70,
+        }).go();
+
+        new TypeIt('#desc', {
+            waitUntilVisible: true,
+            startDelay: 4000,
+            cursor: false,
+            speed: 90
+        })
+            .type("Fullstack Developer", { delay: 1500 })
+            .delete(19)
+            .pause(1)
+            .type("Writer", { delay: 1500 })
+            .delete(6)
+            .pause(2)
+            .type("Human", { delay: 1000 })
+            .pause(3)
+            .type(" - most of the time", { delay: 1000 })
+            .pause(2.5)
+            .delete(24)
+            .pause(1)
+            .type("Fullstack Developer", { delay: 1500 })
+            .go();
+    </script>
+    <script>
+        function navResponsive() {
+            const x = document.querySelector(".navbar");
+            if (x.className === "navbar") x.className += " responsive";
+            else x.className = "navbar";
+        }
+    </script>
 
 </body>
 

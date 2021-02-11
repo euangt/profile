@@ -1,0 +1,132 @@
+.navbar {
+  overflow: hidden;
+  height: 60px;
+  display: flex;
+}
+
+.navbar_menu {
+  display: flex;
+  width: 99%;
+  justify-content: flex-end;
+  position: fixed;
+}
+
+.navbar_item {
+  list-style-type: none;
+  float: right;
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  font-size: 1.1em;
+  line-height: 32px;
+  transition: 0.2s ease-in-out;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+.navbar_item:not(:last-child) {
+  margin-right: 0.5em;
+}
+.navbar_item::before {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: 0.2s ease-in-out;
+  transition-delay: 0.6s;
+  left: 50%;
+}
+.navbar_item::after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  height: 0;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  transition: 0.2s;
+  transition-delay: 0.4s;
+}
+.navbar_item:hover, .navbar_item.active {
+  color: white;
+}
+.navbar_item:hover::before, .navbar_item.active::before {
+  transition-delay: 0s;
+  width: 100%;
+  left: 0;
+}
+.navbar_item:hover::after, .navbar_item.active::after {
+  transition-delay: 0.2s;
+  height: 80%;
+}
+.navbar_item_hovered {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+}
+.navbar_item_hovered::before, .navbar_item_hovered::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  top: 10%;
+  width: 0;
+  transition: 0.2s;
+  transition-delay: 0.2s;
+}
+.navbar_item_hovered::after {
+  left: 100%;
+  right: 0;
+}
+.navbar_item_hovered:hover::before {
+  width: 50%;
+  transition-delay: 0.4s;
+}
+.navbar_item_hovered:hover::after {
+  left: 50%;
+  right: 0;
+  width: 50%;
+  transition-delay: 0.4s;
+}
+.navbar_item_content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10%;
+  bottom: 10%;
+  overflow: hidden;
+}
+.navbar_item_content::before {
+  position: absolute;
+  color: white;
+  top: -1em;
+  left: 0;
+  right: 0;
+  height: 0;
+  overflow: hidden;
+  font-size: 1.1em;
+  padding-top: 0.5em;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  transition-delay: 0s;
+}
+.navbar_item:hover .navbar_item_content::before {
+  top: 0;
+  height: 100%;
+  transition-delay: 0.6s;
+}
+.navbar_item_icon {
+  display: none;
+  width: 60px;
+}

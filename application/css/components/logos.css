@@ -1,0 +1,16 @@
+.logos {
+  color: white;
+  font-size: 35px;
+}
+
+.inline_list>li {
+  display: inline;
+  padding-right: 10px;
+  list-style: none;
+}
+
+.inline_list {
+  list-style: none;
+  /* list-style-position: initial; */
+  padding-left: 0px;
+}
